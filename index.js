@@ -5,7 +5,6 @@ $(document).ready(function(){
 
 function startFirstVideo(){
     video.removeEventListener("canplaythrough",startFirstVideo);
-    $("#cursor").attr("fuse","true");
     video.addEventListener("click",provaVideo);
 }
 
