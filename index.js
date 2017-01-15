@@ -13,7 +13,7 @@ function startFirstVideo(){
 }
 
 function provaVideo(){
-    video.removeEventListener("click",provaVideo);
+   // video.removeEventListener("click",provaVideo);
     video.play();
 }
 
