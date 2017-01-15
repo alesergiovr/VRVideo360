@@ -18,7 +18,13 @@
             <a-camera>
                 <a-cursor id="cursor" color= "yellow" fuse="false" fuse-timeout="4000" opacity="1"></a-cursor>
             </a-camera>
-            <a-videosphere src="#video1" rotation="0 90 -15"></a-videosphere>
+            <a-entity geometry="primitive: sphere;
+                      radius: 5000;
+                      segmentsWidth: 64;
+                      segmentsHeight: 64;"
+                material="shader: flat; src: #video1;"
+            scale="-1 1 1">
+             </a-entity>
         </a-scene>
     </body>
 </html>
