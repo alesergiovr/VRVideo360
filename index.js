@@ -22,7 +22,7 @@ document.getElementById('play-button').addEventListener("click", function(e){
 
 var vid = document.getElementById('vid');
 document.getElementById('play-button').addEventListener("click", function(e){
-  this.style.display = 'none';
+  $("#play-button").remove();
   vid.play();
 }, false);
 
