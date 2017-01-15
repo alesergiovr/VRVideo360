@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     video = document.getElementById("video1");
     video.addEventListener("canplaythrough",startFirstVideo);
     });
@@ -11,4 +11,10 @@ function startFirstVideo(){
 function provaVideo(){
     video.removeEventListener("click",provaVideo);
     video.play();
-}
+}*/
+
+var vid = document.getElementById('video1');
+document.getElementById('play-button').addEventListener("click", function(e){
+  this.style.display = 'none';
+  vid.play();
+}, false);
