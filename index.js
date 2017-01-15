@@ -8,12 +8,12 @@ $(document).ready(function(){
 });
 
 function startFirstVideo(){
-    video.removeEventListener("canplaythrough",startFirstVideo);
+    //video.removeEventListener("canplaythrough",startFirstVideo);
     video.play();
 }
 
 function provaVideo(){
-   // video.removeEventListener("click",provaVideo);
+    video.removeEventListener("click",provaVideo);
     video.play();
 }
 
