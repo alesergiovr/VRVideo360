@@ -11,10 +11,24 @@ function startFirstVideo(){
 function provaVideo(){
     video.removeEventListener("click",provaVideo);
     video.play();
-}*/
+}
 
 var vid = document.getElementById('video1');
 document.getElementById('play-button').addEventListener("click", function(e){
   this.style.display = 'none';
   vid.play();
+}, false);*/
+
+var vid = document.getElementById('vid');
+document.getElementById('play-button').addEventListener("click", function(e){
+  this.style.display = 'none';
+  vid.play();
 }, false);
+console.log(vid);
+
+var vid = document.getElementById('vid');
+document.getElementById('play-button').addEventListener("click", function(e){
+  this.style.display = 'none';
+  vid.play();
+}, false);
+
