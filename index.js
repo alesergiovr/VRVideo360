@@ -21,7 +21,8 @@ document.getElementById('play-button').addEventListener("click", function(e){
 
 $(document).ready(function(){
     var vid = document.getElementById('vid');
-    document.getElementById('play-button').addEventListener("click", function(e){
+    var but = document.getElementById("play-button");
+    but.addEventListener("click", function(e){
         $("#play-button").remove();
         vid.play();
     }, false);
