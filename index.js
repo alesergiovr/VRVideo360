@@ -19,10 +19,12 @@ document.getElementById('play-button').addEventListener("click", function(e){
   vid.play();
 }, false);*/
 
+$(document).ready(function(){
+    var vid = document.getElementById('vid');
+    document.getElementById('play-button').addEventListener("click", function(e){
+        $("#play-button").remove();
+        vid.play();
+    }, false);
+});
 
-var vid = document.getElementById('vid');
-document.getElementById('play-button').addEventListener("click", function(e){
-  $("#play-button").remove();
-  vid.play();
-}, false);
 
