@@ -3,43 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
         <title>VR Drive</title>
         <meta name="description" content="360 Video story with A-Frame">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="./index.js"></script>
     </head>
-    <body><button id="play-button" style="position: fixed; top: calc(50% - 1em);  left: calc(50% - 2em);  width: 4em;  height: 2em;
+    <body style="background-color: black;">
+        <button id="play-button" style="position: fixed; top: calc(50% - 1em);  left: calc(50% - 2em);  width: 4em;  height: 2em;
         z-index: 10;">Play</button>
-
-<a-scene id="vr-scene">
-  <a-camera 
-    id="camera"
-    position="0 1.8 4"
-    cursor-visible="true"
-    cursor-scale="2" 
-    cursor-color="#000000" 
-    cursor-offset="2" 
-    cursor-maxdistance="100"
-    cursor-opacity="0.7"></a-camera>
- 
-  <a-assets>
-    <video id="vid" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"
-    crossOrigin="anonymous"
-    autoplay="false"
-    loop="true"
-    style="display: none"></video>
-  </a-assets>
- 
-  <a-entity geometry="primitive: sphere;
-                      radius: 5000;
-                      segmentsWidth: 64;
-                      segmentsHeight: 64;"
-            material="shader: flat; src: #vid;"
-            scale="-1 1 1">
-  </a-entity>
-
-</a-scene>
+        
+        <a-scene>
+            <a-assets>
+                <video id="video1" src="./360_0052_Stitch_XHC.MP4"></video>
+            </a-assets>
+            <a-camera>
+                <a-cursor id="cursor" fuse="false" fuse-timeout="4000" opacity="0.3"></a-cursor>
+            </a-camera>
+            <a-videosphere src="#video1" rotation="0 90 -15"></a-videosphere>
+        </a-scene>
     </body>
 </html>
