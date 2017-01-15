@@ -2,8 +2,9 @@
     video = document.getElementById("video1");
     
     });*/
+var video;
 $(document).ready(function(){
-    var video = document.getElementById("video1");
+    video = document.getElementById("video1");
     video.addEventListener("canplaythrough",startFirstVideo);
 });
 
