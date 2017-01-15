@@ -19,12 +19,6 @@ document.getElementById('play-button').addEventListener("click", function(e){
   vid.play();
 }, false);*/
 
-var vid = document.getElementById('vid');
-document.getElementById('play-button').addEventListener("click", function(e){
-  this.style.display = 'none';
-  vid.play();
-}, false);
-console.log(vid);
 
 var vid = document.getElementById('vid');
 document.getElementById('play-button').addEventListener("click", function(e){
